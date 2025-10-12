@@ -1,5 +1,21 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
+
+# Данные для моков
+BUN_NAME = "Белая булочка"
+BUN_PRICE = 100
+
+INGREDIENT_NAME = "Соус острый"
+INGREDIENT_TYPE = INGREDIENT_TYPE_SAUCE
+INGREDIENT_PRICE = 50
+
+FILLING_NAME = "Котлета"
+FILLING_TYPE = INGREDIENT_TYPE_FILLING
+FILLING_PRICE = 200
 
 # Данные для параметризованных тестов цены
 PRICE_TEST_DATA = [
